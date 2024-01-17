@@ -43,7 +43,7 @@ public class JwtTokenGeneratorFilter extends OncePerRequestFilter {
 			
 			String jwtToken = Jwts
 					              .builder()
-					                       .setIssuer("VINAY")
+					                       .setIssuer("Akhtar")
 					                       .setSubject("JWT Token")
 					                       .claim("username", authentication.getName())
 					                       .claim("authorities", populateAuthorities(authentication.getAuthorities()))
